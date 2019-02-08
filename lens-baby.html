@@ -21,6 +21,7 @@
     <meta charset="utf-8">
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
@@ -125,7 +126,7 @@
       header span {
         font-size: 32px;
         color: #FA6754;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Helvetica', serif;
         font-weight: 400;
           line-height: 1;
           margin-top: -10px;
@@ -388,16 +389,16 @@
         background-color: #face50;
       }
       #wine-2 {
-        background-color: #e87e9a;
+        background-color: #face50;
       }
       #wine-3 {
-        background-color: #d1a67e;
+        background-color: #face50;
       }
       #wine-4 {
-        background-color: #77bfaf;
+        background-color: #face50;
       }
       #wine-5 {
-        background-color: #d6b153;
+        background-color: #face50;
       }
       amp-carousel[slide="2"] #wine-1 .copy > div,
       amp-carousel[slide="3"] #wine-2 .copy > div,
@@ -675,9 +676,16 @@
                 [slide]="selected.slide">
                 <div id="intro" class="slide">
                     <div id="intro-text">
-                        <amp-bodymovin-animation loop="false" renderer="svg" layout="fixed" width="326" height="185"
-                            src="https://lens-templates.firebaseapp.com/assets/template-pairings/pasta.json"></amp-bodymovin-animation>
-                        <amp-img src="assets/template-pairings/intro.svg" layout="fixed" width="288" height="258" alt=""></amp-img>
+                        <amp-video
+    id="video-hero"
+    src="https://target.scene7.com/is/content/Target/5b5b5805700b8a0001b438e7_Flash9_Autox720p_2600k"
+    poster="https://target.scene7.com/is/image/Target/GUEST_5a3289ce-6191-47c4-ab3c-219daa005a89?wid=1400&fmt=webp"
+    width="412"
+    height="234"
+    layout="responsive"
+    controls>
+  </amp-video>
+
                     </div>
                 </div>
                 <div id="explanation" class="slide">
@@ -696,7 +704,15 @@
                             <div class="right">
                                 <div class="copy">
                                     <div class="top">
-                                        <h1>Johnson's Head-To-Toe Baby Wash and Shampoo - 27.1oz</h1>
+                                        <h1>Johnson's Head-To-Toe Baby Wash and Shampoo</h1>
+                                        <h2 class="small">$5.99</h2>
+                                        <div class="rating">
+                                            <p><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
+                                            <p class="score" style="width: 90%;"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
+                                        </div>
+                                    </div>
+                                     <div class="middle">
+                                        <p>Gentle, clean, and sudsy wash and shampoo in 27 oz.</p>
                                     </div>
                                     <div class="bottom">
                                         <p><a href="https://www.target.com/p/johnson-s-head-to-toe-baby-wash-and-shampoo-27-1oz/-/A-53388231" class="button">Buy Now</a></p>
@@ -725,7 +741,6 @@
                                     </div>
                                     <div class="middle">
                                         <p>A collection of six brightly-colored baby bottles</p>
-                                      
                                     </div>
                                     <div class="bottom">
                                         <p><a href="#" class="button">Buy Now</a></p>
@@ -739,25 +754,21 @@
                     <div class="content">
                         <div class="group">
                             <div class="image">
-                                <amp-img src="assets/template-pairings/wine-3.jpg" layout="responsive" width="180"
+                                <amp-img src="assets/template-pairings/stroller.png" layout="responsive" width="180"
                                     height="513" alt="Wipeout Cabernet"></amp-img>
                             </div>
                             <div class="right">
                                 <div class="copy">
                                     <div class="top">
-                                        <h1>Wipeout Cabernet</h1>
-                                        <h2 class="small">Oceana Vineyard</h2>
+                                        <h1>Baby Trend City Scape Jogger Travel System</h1>
+                                        <h2 class="small">$199.99</h2>
                                         <div class="rating">
                                             <p><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
                                             <p class="score" style="width: 80%;"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
                                         </div>
                                     </div>
                                     <div class="middle">
-                                        <p>Dark chocolate, cinnamon, wood, licorice..</p>
-                                        <ul class="specs">
-                                            <li><sup>$</sup>49.16<br><span>750 ML</span></li>
-                                            <li>14<sup>%</sup><br><span>ABV</span></li>
-                                        </ul>
+                                        <p>Robust stroller that ncludes Ally infant car seat and base</p>
                                     </div>
                                     <div class="bottom">
                                         <p><a href="#" class="button">Buy Now</a></p>
@@ -771,25 +782,22 @@
                     <div class="content">
                         <div class="group">
                             <div class="image">
-                                <amp-img src="assets/template-pairings/wine-4.png" layout="responsive" width="180"
-                                    height="513" alt="Maria Pinot Noir"></amp-img>
+                                <amp-img src="assets/template-pairings/babybook.png" layout="responsive" width="180"
+                                    height="513" alt="Baby Books"></amp-img>
                             </div>
                             <div class="right">
                                 <div class="copy">
                                     <div class="top">
-                                        <h1>Maria Pinot Noir</h1>
-                                        <h2 class="small">Sunset Cliffs Wine Co.</h2>
+                                        <h1>Melissa & Doug® Soft Activity Baby Book</h1>
+                                        <h2 class="small">$11.49</h2>
                                         <div class="rating">
                                             <p><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
                                             <p class="score" style="width: 80%;"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
                                         </div>
                                     </div>
                                     <div class="middle">
-                                        <p>Honeysuckle, cantaloupe, vanilla.</p>
-                                        <ul class="specs">
-                                            <li><sup>$</sup>22.99<br><span>750 ML</span></li>
-                                            <li>15<sup>%</sup><br><span>ABV</span></li>
-                                        </ul>
+                                        <p>Crinkling, squeaking, lift-the-flap cloth book</p>
+                            
                                     </div>
                                     <div class="bottom">
                                         <p><a href="#" class="button">Buy Now</a></p>
@@ -803,28 +811,24 @@
                     <div class="content">
                         <div class="group">
                             <div class="image">
-                                <amp-img src="assets/template-pairings/wine-5.jpg" layout="responsive" width="180"
-                                    height="513" alt="Starboard Merlot"></amp-img>
+                                <amp-img src="assets/template-pairings/toy.png" layout="responsive" width="180"
+                                    height="513" alt="Sophie la Girafe Teether"></amp-img>
                             </div>
                             <div class="right">
                                 <div class="copy">
                                     <div class="top">
-                                        <h1>Starboard Merlot</h1>
-                                        <h2 class="small">Nautilus</h2>
+                                        <h1>Sophie la Girafe Teether</h1>
+                                        <h2 class="small">$24.99</h2>
                                         <div class="rating">
                                             <p><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
                                             <p class="score" style="width: 100%;"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></p>
                                         </div>
                                     </div>
                                     <div class="middle">
-                                        <p>Cranberry, spice, vanilla.</p>
-                                        <ul class="specs">
-                                            <li><sup>$</sup>37.99<br><span>750 ML</span></li>
-                                            <li>14.5<sup>%</sup><br><span>ABV</span></li>
-                                        </ul>
+                                        <p>Giraffe teether toy engages all 5 senses</p>
                                     </div>
                                     <div class="bottom">
-                                        <p><a href="#" class="button">Buy Now</a></p>
+                                        <p><a href="https://www.target.com/p/sophie-la-girafe-teether/-/A-15286048" target="_blank" class="button">Buy Now</a></p>
                                     </div>
                                 </div>
                             </div>
