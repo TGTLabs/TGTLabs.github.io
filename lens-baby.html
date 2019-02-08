@@ -25,6 +25,7 @@
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
     <script async custom-element="amp-bodymovin-animation" src="https://cdn.ampproject.org/v0/amp-bodymovin-animation-0.1.js"></script>
 
     <title>5 Must-Have Gifts for New Parents | Target Baby</title>
@@ -280,11 +281,11 @@
         position: absolute;
         max-width: calc(100% - 24px);
       }
-      #intro-text amp-bodymovin-animation {
+      #intro-text amp-anim {
         position: absolute;
-          bottom: -35px;
-          left: -16px;
-          max-width: 100%;
+          bottom: 0px;
+          left: -100px;
+          max-width: 500px;
       }
 
       /* Explanation */
@@ -676,16 +677,12 @@
                 [slide]="selected.slide">
                 <div id="intro" class="slide">
                     <div id="intro-text">
-                        <amp-video
-    id="video-hero"
-    src="https://target.scene7.com/is/content/Target/5b5b5805700b8a0001b438e7_Flash9_Autox720p_2600k"
-    poster="https://target.scene7.com/is/image/Target/GUEST_5a3289ce-6191-47c4-ab3c-219daa005a89?wid=1400&fmt=webp"
-    width="412"
-    height="234"
-    layout="responsive"
-    controls>
-  </amp-video>
-
+                      <amp-anim width="500"
+                        height="500"
+                        src="assets/target.gif"
+                        alt="an animation"
+                        attribution="Target GIF">
+                      </amp-anim>
                     </div>
                 </div>
                 <div id="explanation" class="slide">
@@ -755,7 +752,7 @@
                         <div class="group">
                             <div class="image">
                                 <amp-img src="assets/template-pairings/stroller.png" layout="responsive" width="180"
-                                    height="513" alt="Wipeout Cabernet"></amp-img>
+                                    height="513" alt="Baby Trend City Scape Jogger Travel System"></amp-img>
                             </div>
                             <div class="right">
                                 <div class="copy">
@@ -783,7 +780,7 @@
                         <div class="group">
                             <div class="image">
                                 <amp-img src="assets/template-pairings/babybook.png" layout="responsive" width="180"
-                                    height="513" alt="Baby Books"></amp-img>
+                                    height="513" alt="Melissa and Doug Soft Activity Baby Book"></amp-img>
                             </div>
                             <div class="right">
                                 <div class="copy">
